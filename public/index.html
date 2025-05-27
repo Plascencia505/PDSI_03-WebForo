@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat Foro</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div id="contenedor">
+        <h1>Foro de chat</h1>
+
+        <div id="registro">
+          <input type="text" id="username" placeholder="Ingresa tu nombre de usuario" autocomplete="off" maxlength="30"/>
+          <button id="btnRegistrar">Entrar</button>
+        </div>
+
+        <div id="chat" class="oculto">
+          <div id="mensajes"></div>
+          <form id="formulario">
+            <button type="button" id="btn-cerrar-sesion">Cerrar sesión</button>
+            <input type="text" id="mensaje" placeholder="Escribe un mensaje..." autocomplete="off" maxlength="200"/>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
