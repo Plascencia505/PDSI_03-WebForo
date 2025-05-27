@@ -74,7 +74,7 @@ io.on('connection', (socket) => {
 });
 
 // Iniciar el servidor
-const PORT = 9090;
+const PORT = 8080;
 const IP = 'localhost';
 server.listen(PORT, IP, () => {
   console.log(`Servidor activo en http://${IP}:${PORT}`);
