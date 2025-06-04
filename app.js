@@ -63,7 +63,7 @@ io.on('connection', (socket) => {
 
     historial.push(mensaje); // Guardar en historial
     if (historial.length > 100) historial.shift(); // Limitar historial
-    
+
     io.emit('mensaje', mensaje); // Enviar a todos
   });
 
